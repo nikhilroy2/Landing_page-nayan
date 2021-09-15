@@ -10,15 +10,19 @@
     display: none;
 }
 
-@media (max-width: 1366px) {
-    .mycontainer {
-        max-width: 1286px !important;
-        padding: 0px 40px 0px 40px;
-    }
-}
+
 
 
 /* about_us_navbar_nav */
+.about_us_container{
+    padding-left: 1rem;
+}
+@media (max-width: 414px){
+    .about_us_container{
+        padding-left: 0px!important;
+        padding-right: 0px!important;
+    }  
+}
 .about_us_navbar_nav .nav-item:first-child .nav-link {
     color: #D03A3B !important
 }
@@ -54,6 +58,9 @@
 
 @media screen and (max-width: 1280px) {
     .about_us_navbar_nav a.nav-link.cross_size span:nth-child(2) {
+        color: #2A263C !important;
+    }
+    .about_us_navbar_nav .cross_size_1280 span{
         color: #2A263C !important;
     }
 }
@@ -139,9 +146,9 @@
 
 .about_us_container .about_right {
     height: auto;
-    margin-left: 78px;
-    transform: translateX(40px);
+    margin-left: 56px;
     z-index: -1;
+    transform: translateX(28px);
 }
 
 @media screen and (max-width: 1366px) {
@@ -156,9 +163,10 @@
     width: 100%;
 }
 
-@media screen and (max-width:1480px) {
+@media screen and (max-width:1440px) {
     .about_us_container .about_right {
-        width: 969px;
+        width: 740px;
+        margin-left: auto;
     }
 }
 
@@ -175,13 +183,13 @@
     }
 }
 
-@media screen and (min-width:1152px) {
+/* @media screen and (min-width:1152px) {
     .about_us_container .about_right {
         width: 478px;
     }
-}
+} */
 
-@media screen and (max-width:1151px) {
+@media screen and (max-width:1152px) {
     .about_us_container .about_right {
         display: none;
     }
@@ -190,22 +198,39 @@
         margin-left: auto;
         margin-right: auto;
     }
+    .about_us_container{
+        padding-right: 1rem;
+    }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1152px) {
     .about_us_container .about_left {
         width: 574px;
     }
+    .header-top{
+        display: none;
+    }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1151px) {
+    .about_quote_wrapper svg:nth-child(1){
+        display: none!important;
+    }
+    .about_quote_wrapper svg:nth-child(2){
+        display: block!important;
+    }
+    .about_us_container{
+        pointer-events: none;
+    }
     .about_us_container .about_left {
         width: 100%;
     }
-
     .about_us_container .about_quote_wrapper {
         height: 102px;
         margin-top: 32px;
+    }
+    .about_us_container .about_left {
+        width: 574px;
     }
 
 
