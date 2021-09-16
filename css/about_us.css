@@ -148,7 +148,12 @@
     height: auto;
     /* margin-left: 56px; */
     z-index: -1;
-    transform: translateX(28px);
+    transform: translateX(72px)
+}
+@media screen and (max-width: 1440px){
+    .about_us_container .about_right {
+        transform: translateX(28px);
+    }
 }
 
 @media screen and (max-width: 1366px) {
